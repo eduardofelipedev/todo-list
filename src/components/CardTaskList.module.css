@@ -1,0 +1,85 @@
+.card {
+  background-color: var(--gray-500);
+
+  /* display: flex; */
+  width: 50%;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card + .card {
+  margin-top: 2rem;
+}
+
+.toggleButton {
+  margin-right: 1rem;
+  border: 0;
+  background-color: transparent;
+  color: var(--blue-dark);
+  line-height: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.toggleButton:hover {
+  color: var(--blue);
+}
+
+.toggleButtonCheck {
+  margin-right: 1rem;
+  border: 0;
+  background-color: transparent;
+  color: var(--purple-dark);
+  line-height: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.toggleButtonCheck:hover {
+  color: var(--purple);
+}
+
+.taskText {
+  flex-grow: 1;
+  color: var(--gray-200);
+  font-size: 0.875rem;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limita a 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.deleteButton {
+  border: 0;
+  background-color: transparent;
+  color: var(--gray-300);
+  line-height: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  color: var(--danger);
+}
+
+/* @media (max-width: 768px) {
+  .card {
+    width: 70%;
+  }
+} */
